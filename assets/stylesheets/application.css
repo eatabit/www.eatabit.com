@@ -1,0 +1,43 @@
+html { height: 100% }
+
+body {
+  height: 100%;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.navbar-header img { margin: 10px 10px 0 0; }
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-image: url(../images/city.jpg);
+  background-position: center;
+  height: 550px;
+  margin-bottom: 0;
+}
+
+.container img {
+  -moz-box-shadow: 0 0 15px #999;
+  -webkit-box-shadow: 0 0 15px #999;
+  box-shadow: 0px 0px 15px #999;
+  top: -70px;
+  position: relative;
+}
+
+.container .customers h1, .container .customers h1 i,
+.container .menu h1, .container .menu h1 i {
+  font-size: 3em;
+  vertical-align: middle;
+}
+
+.row.menu {
+  text-align: right;
+}
+
+#content a { font-weight: bold; }
+
+#modal-text { width: 275px; }
+
+footer {
+  margin-top: 40px;
+}
