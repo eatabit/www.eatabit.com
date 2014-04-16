@@ -16,6 +16,20 @@ body {
   margin-bottom: 0;
 }
 
+#customer {
+  position: absolute;
+  left: 70%;
+  bottom: 65%;
+  opacity: 0;
+}
+
+#restaurant {
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
+  opacity: 0;
+}
+
 .container .row img {
   -moz-box-shadow: 0 0 15px #999;
   -webkit-box-shadow: 0 0 15px #999;
@@ -40,4 +54,17 @@ body {
 
 footer {
   margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+
+  #customer {
+    bottom: 55%;
+    left: 50%;
+  }
+
+  #restaurant {
+    bottom: 5%;
+    left: 10%;
+  }
 }

@@ -2,8 +2,8 @@ function chatAnimation() {
 
   if (document.getElementsByClassName("home").length > 0){
 
-    $(".jumbotron").append('<div id="customer" class="bubble" style="position:absolute;left:70%;bottom:65%;opacity:0;"></div>');
-    $(".jumbotron").append('<div id="restaurant" class="bubble bubble--alt" style="position:absolute;left:20%;bottom:40%;opacity:0;"></div>');
+    $(".jumbotron").append('<div id="customer" class="bubble"></div>');
+    $(".jumbotron").append('<div id="restaurant" class="bubble bubble--alt"></div>');
 
     var messages = ["I'm hungry!",
                     "Welcome back to Bill's Pizza, Greg! Would you like \"pickup\" or \"delivery\" service? Currently, pickup orders take 15 minutes and delivery takes 30 minutes.",
