@@ -1,0 +1,20 @@
+body.blog .blog-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body.blog .blog-title {
+  font-size: 60px;
+}
+
+body.blog p.indent {
+  text-indent: 10px;
+}
+
+body.blog .blog-main {
+  margin-bottom: 50px;
+}
+
+body.blog .blog-post p {
+  overflow: scroll;
+}

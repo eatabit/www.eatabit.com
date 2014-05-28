@@ -1,4 +1,4 @@
-function chatAnimation() {
+(function() {
 
   if (document.getElementsByClassName("home").length > 0){
 
@@ -26,6 +26,7 @@ function chatAnimation() {
       }
     });
   };
-};
 
-chatAnimation.call();
+  $( ".navbar-text button, .navbar-text a" ).tooltip();
+
+}).call(this);

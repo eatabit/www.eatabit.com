@@ -41,15 +41,18 @@
         </div>
         <div class="pull-right">
           <p class="navbar-text hidden-xs">
-            <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">
-              <i class="fa fa-video-camera" data-toggle="modal" data-target="#myModal"></i>
+            <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="bottom" title="How it works">
+              <i class="fa fa-video-camera"></i>
             </button>
           </p>
           <p class="navbar-text hidden-xs">
-            <a href="https://twitter.com/eatabit" class="navbar-link"><i class="fa fa-twitter"></i> </a>
+            <a href="https://twitter.com/eatabit" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i> </a>
           </p>
           <p class="navbar-text hidden-xs">
-            <a href="mailto:greg@eatabit.com" class="navbar-link"><i class="fa fa-envelope"></i> </a>
+            <a href="./blog/index.html" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Blog"><i class="fa fa-comment"></i> </a>
+          </p>
+          <p class="navbar-text hidden-xs">
+            <a href="mailto:greg@eatabit.com" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i> </a>
           </p>
         </div>
       </div>
@@ -191,5 +194,37 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Ordering a pizza in 60 seconds...</h4>
+          </div>
+          <div class="modal-body bg-success">
+            <div class="pull-right" id="modal-text">
+              <div>
+                <p class="text-left">
+                  <h3>Pizza in 60 seconds</h3>
+                  <p class="lead">Never wait on hold again!</p>
+                  <p>Check out this video. It's a real-time demo of eatabit.com's text message food ordering system. Seriously, that's how fast our system is!</p>
+                  <p>We tell you the real pickup and delivery time of the restaurant and we send a confirmation when the order is printed at the restaurant.</p>
+                  <p>Why hasn't anyone thought of this before?</p>
+                </p>
+              </div>
+            </div>
+            <iframe src="http://player.vimeo.com/video/90136179" width="250" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/javascripts/jquery-2.1.0.min.js"></script>
+    <script src="./assets/javascripts/bootstrap.min.js"></script>
+    <script src="./assets/javascripts/application.js"></script>
   </body>
 </html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+    <title>eatabit.com | Blog</title>
+
+    <link rel="stylesheet" href="../assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="../assets/stylesheets/blog.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1620191-7', 'eatabit.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body class="blog">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <img class="pull-left" src="../assets/images/logo.png"/>
+          <a class="navbar-brand" href="../index.html">textual mealing</a>
+        </div>
+        <div class="pull-right">
+          <p class="navbar-text">
+            <a href="../locations.html" class="btn btn-danger btn-xs">
+              <i class="fa fa-star"></i> Our Locations
+            </a>
+          </p>
+          <p class="navbar-text hidden-xs">
+            <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="bottom" title="How it works">
+              <i class="fa fa-video-camera"></i>
+            </button>
+          </p>
+          <p class="navbar-text hidden-xs">
+            <a href="https://twitter.com/eatabit" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i> </a>
+          </p>
+          <p class="navbar-text hidden-xs">
+            <a href="mailto:greg@eatabit.com" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i> </a>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title"><i class="fa fa-signal"></i> The eatabit.com blog</h1>
+        <p class="lead">Peaks and troughs in the <a href="http://charlestonmag.com/features/the_rise_of_silicon_harbor">Silicon Harbor.</a></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title"><a href="./articles/bill-murray-crashed-my-log-file.html">Bill Murray crashed my...log file</a></h2>
+            <p class="blog-post-meta">May 27th, 2014 by <a href="#">Greg</a></p>
+
+            <hr>
+            <p class="indent">
+              My business partner Stewart and I have worked on various products in the online F&B space over the years and experienced the successes and failures that come with startups.
+              <em>"The terrifying lows, the dizzying highs, the creamy middles!"</em> as Homer Simpson said.
+              Our latest product is <a href="http://www.eatabit.com">eatabit.com</a> where we are trying to solve the problem of how to transport food orders from the cloud, over the last mile of air, to a printed ticket inside a restaurant.
+            </p>
+            <p class="indent">
+              One of eatabit.com's applications is as a mobile F&B ordering system for large outdoor events and one of our clients is the <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCgQFjAA&url=http%3A%2F%2Fwww.milb.com%2Findex.jsp%3Fsid%3Dt233&ei=rqiEU-n8DZHnsATf94LADw&usg=AFQjCNFvMhm5Ut5aeDY9mEDjDNrQysSzVA&bvm=bv.67720277,d.cWc">Charleston Riverdogs</a>, the minor league baseball team here in Charleston, SC.
+            <p class="indent">
+              We had a ton of challenges rolling out this side of the product: caching issues, printer firmware bugs, cellular network congestion and user training all took their turns beating us up.
+              Over the last week, while the Riverdogs were playing away games, we persevered, pivoted and pirouetted our way through solutions to the technical issues.
+            <p class="lead">
+              It was <em>exhausting</em>.
+            </p>
+            <p class="indent">
+              Last night, the Riverdogs played the first of a series of home games against the Greenville Drive and we were onsite for tech support.
+              Confident in the changes we had made, I still kept flipping tabs between <a href="http://newrelic.com/">New Relic</a> and <a href="https://papertrailapp.com/">Papertrail</a>, hoping not to see an error tear past on the screen...but it didn't.
+              And the innings kept passing...
+            </p>
+            <p class="lead">New Relic looking good...</p>
+            <p><img src="../assets/images/blog/new_relic.png" alt="Bill Murray"></p>
+            <p class="lead">Now back to Papertrail...wait, what?</p>
+            <p><img src="../assets/images/blog/jaguar_shark.png" alt="Bill Murray"></p>
+            <p class="lead">
+              Wow.
+            </p>
+            <p class="indent">
+              I have, as many in Charleston do, a handful of <em>literally</em> pedestrian Bill Murray encounters: I passed him on the sidewalk on my way in to work one morning; I think I saw him in a car at a stoplight one night...
+              I knew he was part owner of the Riverdogs and frequented the games so why was seeing his name so rewarding?
+            </p>
+            <p class="lead">
+              Because just a day ago, we were stuck in the mud, under the water, short on air.
+            </p>
+            <p class="lead">
+              I smiled, closed the laptop and watched the end of the game.
+            </p>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>We are a small startup in Charleston, SC. We take food orders over text message and print them inside restaurants.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">May 2014</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <p>
+          <a href="#"><i class="fa fa-hand-o-up"></i> Back to top</a>
+        </p>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Ordering a pizza in 60 seconds...</h4>
+          </div>
+          <div class="modal-body bg-success">
+            <div class="pull-right" id="modal-text">
+              <div>
+                <p class="text-left">
+                  <h3>Pizza in 60 seconds</h3>
+                  <p class="lead">Never wait on hold again!</p>
+                  <p>Check out this video. It's a real-time demo of eatabit.com's text message food ordering system. Seriously, that's how fast our system is!</p>
+                  <p>We tell you the real pickup and delivery time of the restaurant and we send a confirmation when the order is printed at the restaurant.</p>
+                  <p>Why hasn't anyone thought of this before?</p>
+                </p>
+              </div>
+            </div>
+            <iframe src="http://player.vimeo.com/video/90136179" width="250" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/javascripts/jquery-2.1.0.min.js"></script>
+    <script src="../assets/javascripts/bootstrap.min.js"></script>
+    <script src="../assets/javascripts/application.js"></script>
+  </body>
+</html>

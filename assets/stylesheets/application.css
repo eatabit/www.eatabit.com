@@ -8,6 +8,15 @@ body {
 
 .navbar-header img { margin: 10px 10px 0 0; }
 
+p.navbar-text {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.navbar-text a i {
+  color: #fff;
+}
+
 .jumbotron {
   background-repeat: no-repeat;
   background-image: url(../images/city.jpg);
