@@ -28,14 +28,14 @@ p.navbar-text {
 #customer {
   position: absolute;
   left: 70%;
-  bottom: 65%;
+  top: 25%;
   opacity: 0;
 }
 
 #restaurant {
   position: absolute;
   left: 20%;
-  bottom: 40%;
+  top: 20%;
   opacity: 0;
 }
 
