@@ -27,7 +27,3 @@ body.blog p.indent::first-letter {
 body.blog .blog-main {
   margin-bottom: 50px;
 }
-
-body.blog .blog-post p {
-  overflow: scroll;
-}
