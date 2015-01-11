@@ -3,21 +3,235 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <link rel="shortcut icon" href="./assets/ico/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order food via text meassage">
+    <meta name="author" content="eatabit.com">
 
     <title>eatabit.com | Home</title>
 
-    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/stylesheets/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="./assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/stylesheets/bubble.css">
-    <link rel="stylesheet" href="./assets/stylesheets/application.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/other_images/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <!-- intro animations -->
+    <link href="assets/js/wow/animate.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link href="assets/js/lightbox/css/lightbox.css" rel="stylesheet">
+
+    <!-- styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- place your extra custom styles in this file -->
+    <link href="assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="background-image-overlay"></div>
+
+    <div id="outer-background-container" data-default-background-img="assets/images/other_images/bg1.jpg" style="background-image:url(assets/images/other_images/bg1.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        
+        <div class="logo">
+          <a href="#intro" class="link-scroll"><img src="assets/images/other_images/logo.png" alt="eatabit.com"></a>
+        </div><!-- .logo -->
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <ul id="main-menu">
+          <li id="menu-item-customers" class="menu-item scroll"><a href="#customers">Customers</a></li>
+          <li id="menu-item-owners" class="menu-item scroll"><a href="#owners">Owners</a></li>
+        </ul><!-- #main-menu -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <section id="main-content" class="clearfix">
+        
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg1.jpg">
+          <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+                <section class="feature-text pop-div">
+                  <h1 class="pop"><i class="fa fa-mobile"></i> Text to order</h1>
+                  <p>We take customer food orders over text message and print them out inside restaurants.</p>
+                  <p><a href="#customers" class="link-scroll btn btn-outline-inverse btn-lg"><i class="fa fa-arrow-down"></i> find out more</a></p>
+                </section>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="customers" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right pop-div">
+
+                <h1 class="section-title">Customers</h1>
+
+                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/phone.png" class="lazy pull-right" alt="eatabit text ordering">
+                  Last year, $70 billion was spent on pickup and delivery at independant restaurants. Only <strong>3%</strong> of those orders were placed electronically.
+                </p>
+                <h4>Why only 3%?</h4>
+                <p>
+                  It's because people don't want to take the time to fill out forms on the web and in when they order food. People want the convenience of a phone call without making a phone call.
+                </p>
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm"><i class="fa fa-bolt"></i> Try it yourself</a></p>
+                
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1><i class="fa fa-bolt"></i> Try it yourself</h1>
+                  <p>
+                    <img data-img-src="assets/images/other_images/menu.png" class="lazy hover_effect pull-right" alt="Try it yourself">
+                  </p>
+                  <p>
+                    Text "I'm hungry!" to (843) 779-1191
+                  </p>
+                  <p>
+                    Don't worry, Chop Chop isn't a real Chinese restaurant but you'll get the idea...
+                  </p>
+                </div><!-- #modal-content-1 -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="owners" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right pop-div">
+
+                <h1 class="section-title">Owners</h1>
+
+                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/receipt.png" class="lazy pull-right" alt="The problem with online ordering">
+                  The problem with today's online ordering solutions is that they are expensive, time consuming and require changes to the way restaurants do business.
+                </p>
+                <h4>Simple is better</h4>
+                <p>
+                  With eatabit, restaurants plug our patented cellular printer in and can immediately start receiving customer orders - printed on standard ticket paper. No training or configuration needed! 
+                </p>
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm"><i class="fa fa-print"></i> The printer</a></p>
+                
+                <div class="content-to-populate-in-modal" id="modal-content-2">
+                  <h1><i class="fa fa-print"></i> The printer</h1>
+                  <p>
+                    <img data-img-src="assets/images/other_images/printer.png" class="lazy hover_effect pull-right" alt="eatabit cellular printer" id="printer">
+                  </p>
+                  <p>
+                    When we designed the eatabit printer, we asked ourselves: "What would be the best way to receive orders from the restaurant's perspective?"
+                  </p>
+                  <p>
+                    <ul>
+                      <li>Plug and play</li>
+                      <li>Celluar (not wifi)</li>
+                      <li>Prints on paper</li>
+                      <li>No training needed</li>
+                    </ul>
+                  </p>
+                </div><!-- #modal-content-1 -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+      </section><!-- #main-content -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/eatabit" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/eatabit" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a mailto="hey@eatabit.com" title="Email"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2015 eatabit.com</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body clearfix">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+
+    <!-- Javascripts
+    ================================================== -->
+
+    <!-- Jquery and Bootstrap JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Easing - for transitions and effects -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- background image strech script -->
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!-- background image fix for IE 9 or less
+       - use same background as set above to <body> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+    });
+    </script> 
+    <![endif]-->  
+
+    <!-- detect mobile browsers -->
+    <script src="assets/js/detectmobilebrowser.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="assets/js/lightbox/js/lightbox.min.js"></script>
+
+    <!-- intro animations -->
+    <script src="assets/js/wow/wow.min.js"></script>
+
+    <!-- responsive videos -->
+    <script src="assets/js/jquery.fitvids.js"></script>
+
+    <!-- Custom functions for this theme -->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/initialise-functions.js"></script>
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
     <![endif]-->
 
     <script>
@@ -26,115 +240,9 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-1620191-7', 'eatabit.com');
+      ga('create', 'UA-1620191-7', 'auto');
       ga('send', 'pageview');
 
     </script>
-  </head>
-
-  <body class="home">
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <img class="pull-left" src="./assets/images/logo.png"/>
-          <a class="navbar-brand" href="#">textual mealing</a>
-        </div>
-        <div class="pull-right">
-          <p class="navbar-text">
-            <a href="./locations.html" class="btn btn-danger btn-xs">
-              <i class="fa fa-star"></i> Our Locations
-            </a>
-          </p>
-          <p class="navbar-text hidden-xs">
-            <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="bottom" title="How it works">
-              <i class="fa fa-video-camera"></i>
-            </button>
-          </p>
-          <p class="navbar-text hidden-xs">
-            <a href="https://twitter.com/eatabit" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i> </a>
-          </p>
-          <p class="navbar-text hidden-xs">
-            <a href="./blog/index.html" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Blog"><i class="fa fa-comment"></i> </a>
-          </p>
-          <p class="navbar-text hidden-xs">
-            <a href="mailto:greg@eatabit.com" class="navbar-link btn btn-info btn-xs" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i> </a>
-          </p>
-        </div>
-      </div>
-    </nav>
-
-    <div class="jumbotron"></div>
-
-    <div class="container">
-
-      <div class="row customers">
-        <div class="col-md-3">
-          <img id="img-iphone" class="featurette-image img-responsive" src="./assets/images/phone.png">
-        </div>
-        <div class="col-md-9">
-          <h1><i class="fa fa-mobile-phone"></i> Text in your order</h1>
-          <p class="lead">"Everyone uses text messaging all the time. Why not use it to order food?"</p>
-          <p>That's what we asked ourselves a year ago. So we created <strong>eatabit.com</strong>.</p>
-          <p>We wanted to have a conversation with our favorite restaurants rather than filling out forms for our food.</p>
-          <p>Not to mention that we were <em><strong>REALLY</strong></em> tired of getting put on hold.</p>
-          <p>
-            <a href="https://twitter.com/eatabit" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @eatabit</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </p>
-        </div>
-      </div>
-
-      <div class="row menu">
-        <div class="col-md-9">
-          <h1><i class="fa fa-thumbs-o-up"></i> Try it yourself</h1>
-          <p class="lead">Text "I'm hungry!" to (843) 779-1191</p>
-          <p>Don't worry, Chop Chop is not a real Chinese restaurant but you'll get the idea...</p>
-        </div>
-        <div class="col-md-3 hidden-xs">
-          <a href="https://eatabit-api-assets.s3.amazonaws.com/menus/chop_chop.pdf">
-            <img class="featurette-image img-responsive" src="assets/images/menu.png">
-          </a>
-        </div>
-      </div>
-
-      <footer>
-        <ul class="list-inline">
-          <li>&copy; eatabit.com 2014</li>
-        </ul>
-      </footer>
-    </div>
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Ordering a pizza in 60 seconds...</h4>
-          </div>
-          <div class="modal-body bg-success">
-            <div class="pull-right" id="modal-text">
-              <div>
-                <p class="text-left">
-                  <h3>Pizza in 60 seconds</h3>
-                  <p class="lead">Never wait on hold again!</p>
-                  <p>Check out this video. It's a real-time demo of eatabit.com's text message food ordering system. Seriously, that's how fast our system is!</p>
-                  <p>We tell you the real pickup and delivery time of the restaurant and we send a confirmation when the order is printed at the restaurant.</p>
-                  <p>Why hasn't anyone thought of this before?</p>
-                </p>
-              </div>
-            </div>
-            <iframe src="http://player.vimeo.com/video/90136179" width="250" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="./assets/javascripts/jquery-2.1.0.min.js"></script>
-    <script src="./assets/javascripts/bootstrap.min.js"></script>
-    <script src="./assets/javascripts/application.js"></script>
   </body>
 </html>
