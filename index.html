@@ -1,332 +1,162 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Order food via text meassage">
-    <meta name="author" content="eatabit.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/img/favicon.png">
 
-    <title>eatabit.com | Home</title>
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="assets/images/other_images/favicon.png">
+    <title>eatabit.com</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- owl carousel css -->
-    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <!-- intro animations -->
-    <link href="assets/js/wow/animate.css" rel="stylesheet">
-    <!-- font awesome -->
-    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- lightbox -->
-    <link href="assets/js/lightbox/css/lightbox.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- styles for this template -->
-    <link href="assets/css/styles.css" rel="stylesheet">
-
-    <!-- place your extra custom styles in this file -->
-    <link href="assets/css/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/custom/carousel.css" rel="stylesheet">
   </head>
-
   <body>
+    <main role="main">
 
-    <div class="background-image-overlay"></div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="./assets/img/city.png" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>SMS Ordering</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="./assets/img/boxes.png" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="./assets/img/line.png" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-    <div id="outer-background-container" data-default-background-img="assets/images/other_images/bg1.jpg" style="background-image:url(assets/images/other_images/bg1.jpg);"></div>
-    <!-- end: #outer-background-container -->    
 
-    <!-- Outer Container -->
-    <div id="outer-container">
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <!-- Left Sidebar -->
-      <section id="left-sidebar">
-        
-        <div class="logo">
-          <a href="#intro" class="link-scroll"><img src="assets/images/other_images/logo.png" alt="eatabit.com"></a>
-        </div><!-- .logo -->
+      <div class="container marketing">
 
-        <!-- Menu Icon for smaller viewports -->
-        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/img/chat.png" alt="Eatabit SMS Ordering" width="140" height="140">
+            <h2>SMS ordering</h2>
+            <p>Use Eatabit's full-featured SMS ordering platform to provide your customer's with a simple, universal, end-to-end mobile ordering solution.</p>
+            <p><a class="btn btn-secondary" href="https://sms.eatabit.ai" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/img/printer.png" alt="Eatabit cellular printer" width="auto" height="140">
+            <h2>Remote printing</h2>
+            <p>Capturing your customers' online orders is one thing, getting your customers' orders into the hands of the restaurant - that's another. We make it easy.</p>
+            <p><a class="btn btn-secondary" href="https://www.eatabit.io" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/img/tree.png" alt="Eatabit AI API" width="140" height="140">
+            <h2>AI Integration</h2>
+            <p>Harness the power of Eatabit's proprietary natural language processing API to turn your customers' food order conversations into structured order data.</p>
+            <p><a class="btn btn-secondary" href="https://www.eatabit.ai" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
-        <ul id="main-menu">
-          <li id="menu-item-customers" class="menu-item scroll"><a href="#customers">Customers</a></li>
-          <li id="menu-item-owners" class="menu-item scroll"><a href="#owners">Owners</a></li>
-          <li id="menu-item-locations" class="menu-item scroll"><a href="#locations">Locations</a></li>
-        </ul><!-- #main-menu -->
 
-      </section><!-- #left-sidebar -->
-      <!-- end: Left Sidebar -->
+        <!-- START THE FEATURETTES -->
 
-      <section id="main-content" class="clearfix">
-        
-        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg1.jpg">
-          <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
-            <div class="col-sm-10 col-md-9 pull-right">
+        <hr class="featurette-divider">
 
-                <section class="feature-text pop-div">
-                  <h1 class="pop"><i class="fa fa-mobile"></i> Text to order</h1>
-                  <p>We take customer food orders over text message and print them out inside restaurants.</p>
-                  <p><a href="#customers" class="link-scroll btn btn-outline-inverse btn-lg"><i class="fa fa-arrow-down"></i> find out more</a></p>
-                </section>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
 
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
+        <hr class="featurette-divider">
 
-        <article id="customers" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
-          <div class="content-wrapper clearfix">
-            <div class="col-sm-10 col-md-9 pull-right pop-div">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
 
-                <h1 class="section-title">Customers</h1>
+        <hr class="featurette-divider">
 
-                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/phone.png" class="lazy pull-right" alt="eatabit text ordering">
-                  Last year, $70 billion was spent on pickup and delivery at independent restaurants. Only <strong>3%</strong> of those orders were placed electronically.
-                </p>
-                <h4>Why only 3%?</h4>
-                <p>
-                  It's because people don't want to take the time to fill out forms on the web and in apps  when they order food. People want the convenience of a phone call without making a phone call.
-                </p>
-                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm"><i class="fa fa-bolt"></i> Try it yourself</a></p>
-                
-                <div class="content-to-populate-in-modal" id="modal-content-1">
-                  <h1><i class="fa fa-bolt"></i> Try it yourself</h1>
-                  <p>
-                    <img data-img-src="assets/images/other_images/menu.png" class="lazy hover_effect pull-right" alt="Try it yourself">
-                  </p>
-                  <p>
-                    Text "I'm hungry!" to (843) 779-1191
-                  </p>
-                  <p>
-                    Don't worry, Chop Chop isn't a real Chinese restaurant but you'll get the idea...
-                  </p>
-                </div><!-- #modal-content-1 -->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
 
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
+        <hr class="featurette-divider">
 
-        <article id="owners" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
-          <div class="content-wrapper clearfix">
-            <div class="col-sm-10 col-md-9 pull-right pop-div">
+        <!-- /END THE FEATURETTES -->
 
-                <h1 class="section-title">Owners</h1>
+      </div><!-- /.container -->
 
-                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/receipt.png" class="lazy pull-right" alt="The problem with online ordering">
-                  The problem with today's online ordering solutions is that they are expensive, time consuming and require changes to the way restaurants do business.
-                </p>
-                <h4>Simple is better</h4>
-                <p>
-                  With eatabit, restaurants plug our patented cellular printer in and can immediately start receiving customer orders - printed on standard ticket paper. No training or configuration needed! 
-                </p>
-                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm"><i class="fa fa-print"></i> The printer</a></p>
-                
-                <div class="content-to-populate-in-modal" id="modal-content-2">
-                  <h1><i class="fa fa-print"></i> The printer</h1>
-                  <p>
-                    <img data-img-src="assets/images/other_images/printer.png" class="lazy hover_effect pull-right" alt="eatabit cellular printer" id="printer">
-                  </p>
-                  <p>
-                    When we designed the eatabit printer, we asked ourselves: "What would be the best way to receive orders from the restaurant's perspective?"
-                  </p>
-                  <p>
-                    <ul>
-                      <li>Plug and play</li>
-                      <li>Cellular (not wifi)</li>
-                      <li>Prints on paper</li>
-                      <li>No training needed</li>
-                    </ul>
-                  </p>
-                </div><!-- #modal-content-1 -->
 
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 eatabit.com, LLC. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
 
-        <article id="locations" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
-          <div class="content-wrapper clearfix">
-
-              <div id="features-carousel" class="carousel slide with-title-indicators max-height pop-div" data-height-percent="75" data-ride="carousel">
-                
-                <!-- Indicators - slide navigation -->
-                <ol class="carousel-indicators title-indicators pop-text">
-                  <li data-target="#features-carousel" data-slide-to="0" class="active">Paisano's Pizza: James Island</li>
-                  <li data-target="#features-carousel" data-slide-to="1" class="active">Paisano's Pizza: West Ashley</li>
-                  <li data-target="#features-carousel" data-slide-to="2">Orlando's Pizza</li>
-                  <li data-target="#features-carousel" data-slide-to="3">D'Allesandro's Pizza</li>
-                  <li data-target="#features-carousel" data-slide-to="4">Brown Dog Deli</li>
-                  <li data-target="#features-carousel" data-slide-to="5">Smoky Oak</li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-
-                  <div class="item active">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-paisanos.png" class="icon" alt="Paisano's Pizza: James Island"> Paisano's Pizza: James Island</h2>
-                      <h4>SMS number: (843) 606-6116</h4>
-                      <h5>1246 Camp Rd, Charleston, SC 29412</h5>
-                      <p><a href="http://goo.gl/X96uPT" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                  <div class="item">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-paisanos.png" class="icon" alt="Paisano's Pizza: Wesy Ashley"> Paisano's Pizza: West Ashley</h2>
-                      <h4>SMS number: (843) 779-1433</h4>
-                      <h5>1798 Ashley River Rd., West Ashley, SC 29407</h5>
-                      <p><a href="http://goo.gl/R3uAqp" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                  <div class="item">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-orlandos.jpg" class="icon" alt="Orlando's Pizza"> Orlando's Pizza</h2>
-                      <h4>SMS number: (843) 277-8311</h4>
-                      <h5>295 Seven Farms Drive, Charleston, SC 29492</h5>
-                      <p><a href="http://goo.gl/4Xf2Co" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                  <div class="item">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-dallesandros-pizza.png" class="icon" alt="D'Allesandro's Pizza"> D'Allesandro's Pizza</h2>
-                      <h4>SMS number: (843) 410-0866</h4>
-                      <h5>229 Saint Philip Street, Charleston, SC 29403</h5>
-                      <p><a href="http://goo.gl/jbbFYh" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                  <div class="item">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-brown-dog-deli.png" class="icon" alt="Brown Dog Deli"> Brown Dog Deli</h2>
-                      <h4>SMS number: (843) 277-8706</h4>
-                      <h5>40 Broad Street, Charleston, SC 29401</h5>
-                      <p><a href="http://goo.gl/DgEGF7" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                  <div class="item">
-                    <div class="carousel-text-content pop-text">
-                      <h2 class="title"><img src="assets/images/other_images/logo-smoky-oak.png" class="icon" alt="Smoky Oak"> Smoky Oak</h2>
-                      <h4>SMS number: (843) 779-1171</h4>
-                      <h5>Camp Shopping Center, 1234 Camp Road, Charleston, SC</h5>
-                      <p><a href="http://goo.gl/ia3bRW" class="btn btn-default btn-sm"><i class="fa fa-newspaper-o"></i> Download contact</a></p>
-                    </div>
-                  </div><!-- .item -->
-
-                </div><!-- .carousel-inner -->
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
-
-              </div><!-- #about-carousel -->
-
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
-
-      </section><!-- #main-content -->
-
-      <!-- Footer -->
-      <section id="footer">
-
-        <!-- Go to Top -->
-        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
-
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/eatabit" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/eatabit" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="mailto:hey@eatabit.com" title="Email"><i class="fa fa-envelope"></i></a></li>
-        </ul>
-
-        <!-- copyright text -->
-        <div class="footer-text-line">&copy; 2015 eatabit.com</div>
-      </section>
-      <!-- end: Footer -->      
-
-    </div><!-- #outer-container -->
-    <!-- end: Outer Container -->
-
-    <!-- Modal -->
-    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
-    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <div class="modal-body clearfix">
-          </div><!-- .modal-body -->
-        </div><!-- .modal-content -->
-      </div><!-- .modal-dialog -->
-    </div><!-- .modal -->    
-
-    <!-- Javascripts
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-
-    <!-- Jquery and Bootstrap JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Easing - for transitions and effects -->
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-
-    <!-- background image strech script -->
-    <script src="assets/js/jquery.backstretch.min.js"></script>
-    <!-- background image fix for IE 9 or less
-       - use same background as set above to <body> -->
-    <!--[if lt IE 9]>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
-    });
-    </script> 
-    <![endif]-->  
-
-    <!-- detect mobile browsers -->
-    <script src="assets/js/detectmobilebrowser.js"></script>
-
-    <!-- owl carousel js -->
-    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
-
-    <!-- lightbox js -->
-    <script src="assets/js/lightbox/js/lightbox.min.js"></script>
-
-    <!-- intro animations -->
-    <script src="assets/js/wow/wow.min.js"></script>
-
-    <!-- responsive videos -->
-    <script src="assets/js/jquery.fitvids.js"></script>
-
-    <!-- Custom functions for this theme -->
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/initialise-functions.js"></script>
-
-    <!-- IE9 form fields placeholder fix -->
-    <!--[if lt IE 9]>
-    <script>contact_form_IE9_placeholder_fix();</script>
-    <![endif]-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-1620191-7', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./assets/js/vendor/holder.min.js"></script>
   </body>
 </html>
