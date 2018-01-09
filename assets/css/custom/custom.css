@@ -1,0 +1,7 @@
+nav .navbar-text {
+  font-size: 1.5rem;
+}
+
+nav .navbar-text a:nth-child(1) {
+  margin-right: 0.5rem;
+}
