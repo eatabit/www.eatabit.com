@@ -1,7 +1,13 @@
-nav .navbar-text {
-  font-size: 1.5rem;
+h5 {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
 }
 
-nav .navbar-text a:nth-child(1) {
-  margin-right: 0.5rem;
+.full-screen {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
