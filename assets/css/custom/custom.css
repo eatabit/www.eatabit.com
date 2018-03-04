@@ -12,6 +12,10 @@ h5 {
   background-repeat: no-repeat;
 }
 
+.carousel-item {
+  cursor: pointer;
+}
+
 .carousel-control-prev {
   background-image: url("../../../assets/img/favicon.png");
   background-repeat: no-repeat;
