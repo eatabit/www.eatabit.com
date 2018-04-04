@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: eatabit/aws-build:latest
+        auth:
+          username: eatabit
+          password: $DOCKERHUB_PASSWORD
+    working_directory: /usr/src/app
+    steps:
+      - checkout
+
+      - run:
+          name: Deploying if on master (front-end)
+          command: |
+            if [ master == $CIRCLE_BRANCH ]; then
+              aws s3 sync \
+                . \
+                s3://eatabit.com \
+                --exclude ".circleci/*" \
+                --exclude ".git/*"
+            fi
